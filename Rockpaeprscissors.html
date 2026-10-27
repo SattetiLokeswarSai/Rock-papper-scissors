@@ -7,16 +7,46 @@
 </head>
 <body>
     <button onclick="
-        const randomguess = Math.random()
+        const randomGuess = Math.random()
+     let computerGuess ='';
+        if(randomGuess > 0 && randomGuess<1/3){
+        computerGuess ='Rock';}
+    else if(randomGuess > 1/3 && randomGuess<2/3){
+        computerGuess ='Paper';}
+        else if(randomGuess > 2/3 && randomGuess<1){
+       computerGuess ='Scissors';}
+       console.log(computerGuess);
 
-        if(randomguess > 0 && randomguess<1/3){
-        console.log('Rock')}
-    else if(randomguess > 1/3 && randomguess<2/3){
-        console.log('paper')}
-        else if(randomguess > 2/3 && randomguess<1){
-        console.log('Scissor')}
+       if(computerGuess ==='Rock'){
+        console.log('Tie');
+       }
+        else if(computerGuess ==='Paper'){
+        console.log('Win');
+       }
+       else if(computerGuess === 'Scissors')
+       console.log('lose');
         ">Rock</button>
-    <button>paper</button>
+    <button  onclick="
+        const randomguess = Math.random()
+     let computerGuess ='';
+        if(randomguess > 0 && randomguess<1/3){
+        computerGuess ='Rock';}
+    else if(randomguess > 1/3 && randomguess<2/3){
+        computerGuess ='Paper';}
+        else if(randomguess > 2/3 && randomguess<1){
+       computerGuess ='Scissors';}
+       console.log(computerGuess);
+
+       if(computerGuess ==='Rock'){
+        console.log('Win');
+       }
+        else if(computerGuess ==='Paper'){
+        console.log('Tie');
+       }
+       else if(computerGuess === 'Scissors')
+       console.log('lose');
+        ">paper</button>
     <button>Scissor</button>
+    
 </body>
 </html>
